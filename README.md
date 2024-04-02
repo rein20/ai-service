@@ -44,3 +44,71 @@
 
 위 개발 프로세스 순서는 필요에 따라 조금씩 바뀔 수 있습니다. \
 다만, 문제 조건을 확인하지 않는다거나, 정량적인 평가 기준을 설정하지 않으면 모델 고도화 방향이 최적이 아닐 수 있습니다.
+
+## 프로젝트 별 내용
+1) 각 프로젝트 별 주된 내용은 무엇인가요? 어떤 기능들을 개발하나요? (개발 요구사항/Task 를 작성해주세요)
+2) 각 프로젝트 별로 주요하게 사용되는 기술(프롬프트 엔지니어링 기법, OpenAI 기능 등)을 작성해주세요.
+
+### Prompt Engineering 이론 및 실습
+- 학습 내용
+    - 프롬프트 품질에 대한 평가 기준을 설정하고, 각 프롬프트 엔지니어링 기법들을 직접 사용해보고 효과를 체감해봅니다.
+    - 다른 방법론(ex. 파인튜닝) 대비 장단점을 이해하고, 수많은 방법론 중 선택 할 수 있는 방법론임을 인식합니다.
+- 사용 기술
+    - OpenAI API, Google Colaboratory, LLM 평가 지표(ex. LLM-as-a-judge, ROUGE), Prompt Engineering 기법들
+
+### 프로젝트 1. 야놀자 높은/낮은 리뷰 요약
+<p float="left">
+  <img src="https://drive.google.com/uc?export=view&id=1TF5y4AMXwrXPPBSD6HTal9rSXmxg4Iaz" width="300" />
+  <img src="https://drive.google.com/uc?export=view&id=1bf6FFF6jI4OTYee09-G-1hq5iKU3STau" width="300" /><br>
+</p>
+
+- 학습 내용
+    - 야놀자 후기 요약 기능을 그대로 구현해봅니다.
+    - 첫 프로젝트인만큼 데이터 확보, 모델 개발, 데모 제작 과정 등을 최대한 상세하게 진행합니다.
+- Task 조건
+    - 각 숙소 별로 높은 리뷰, 낮은 리뷰를 요약해야 함 (여기서 높은/낮은의 기준은 공개 X)
+    - 모텔은 최근 3개월, 호텔/펜션/게하는 최근 6개월 후기 요약
+    - 후기가 3개 이상 있고, 후기 글의 90자 이상이어야 함
+    - 후기가 많을 수록 최근 작성 후기 위주로 요약
+- 사용 기술
+    - OpenAI API, BeautifulSoup4, Selenium, Gradio, Prompt Engineering 기법들
+
+### 프로젝트 5. 카카오톡 대화 요약
+<p float="left">
+  <img src="https://drive.google.com/uc?export=view&id=1YDHH75artK3U4jVtMGrnpeH71OyJIqdD" width="300" />
+  <img src="https://drive.google.com/uc?export=view&id=1PNHQ2WrSrshm6MO3-NqdCPv1sG5gW-NY" width="300" /><br>
+</p>
+
+- 학습 내용
+    - 카카오톡 대화 요약 기능을 그대로 구현해봅니다.
+- Task 조건
+    - 한글 기준 3천 자 초과 시, 가장 최신 메시지부터 3천 자까지만 요약합니다.
+- 사용 기술
+    - OpenAI API, Gradio, AI Hub, Huggingface Hub, Prompt Engineering 기법들
+
+### Retrieval Augmented Generation (RAG) 이론 및 실습
+- 학습 내용
+    - RAG 개념을 이해하고 언제 어떤 방법을 사용하는지 파악합니다.
+- 사용 기술
+    - OpenAI API (LLM + Embedding), Google Colaboratory, RAG 평가 방법론 (ex. RAGAS)
+
+### 프로젝트 6. 사내 업무 지원 슬랙 챗봇
+- 학습 내용
+    - 이전 강의인 RAG 기술을 추가로 활용하여 ChatGPT API만으로는 해결이 어려운 태스크를 해결합니다.
+- 사용 기술
+    - OpenAI API (LLM + Embedding), Slack Client, Prompt Engineering/RAG 기법들
+
+### 프로젝트 9. 배달의민족 리뷰 기반 메뉴/맛집 추천
+<p float="left">
+  <img src="https://drive.google.com/uc?export=view&id=17TXHEhTvO9GfAGR12J0D1VyBGzyRexZv" width="300" />
+  <img src="https://drive.google.com/uc?export=view&id=1ktsDPqEAqMa6o0M4aEKD4xvYSWX_2TtL" width="300" /><br>
+</p>
+
+- 학습 내용
+    - 배달의민족 리뷰 기반 메뉴/맛집 추천 기능을 그대로 구현해봅니다.
+    - 최종 프로젝트인만큼 엄밀한 구현보다는 지금까지 배운 기법들을 복습하고 잘 활용하는데 초점을 둡니다.
+- Task 조건
+    - GPT-4를 활용하고, 최근 3개월 리뷰 일부를 활용합니다.
+    - 고객 리뷰 및 가게 정보를 안전하게 관리합니다.
+    - 오픈리스트 및 배민1 광고 상품 일부 매장들 정보만 활용합니다.
+- 사용 기술: OpenAI API (LLM + Embedding + Assistant), Claude API, BeautifulSoup4, Selenium, Gradio
