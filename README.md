@@ -1,6 +1,6 @@
 # ai-service
 
-패스트캠퍼스 "10개의 프로젝트로 LLM 서비스 개발" 강의 실습 코드 모음입니다.
+패스트캠퍼스 "[9개 프로젝트로 챗봇부터 AI 에이전트까지](https://fastcampus.co.kr/data_online_llmservice?utm_source=linkedin&utm_medium=viral&utm_campaign=prd^240415^237192&utm_content=teacher^kms^237192)" 강의 실습 코드 모음입니다.
 
 ## 해당 코드의 목표
 실서비스 출시된 AI 서비스들을 직접 따라 만들어보면서 Prompt Engineering, RAG 등의 기술을 익히고 \
