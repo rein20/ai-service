@@ -22,7 +22,7 @@ def crawl_yanolja_reviews(name, url):
     soup = BeautifulSoup(html, 'html.parser')
 
     review_containers = soup.select('#__next > section > div > div.css-1js0bc8 > div > div > div')
-    review_date = soup.select('#__next > section > div > div.css-1js0bc8 > div > div > div > div.css-qdoey2 > div > p')
+    review_date = soup.select('#__next > section > div > div.css-1js0bc8 > div > div > div > div.css-15duhp1 > div > p')
 
     for i in range(len(review_containers)):
         review_text = review_containers[i].find('p', class_='content-text').text
