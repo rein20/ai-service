@@ -1,0 +1,5 @@
+openai==1.34.0
+tqdm
+gradio==4.36.1
+google-generativeai==0.7.0
+anthropic==0.28.1
