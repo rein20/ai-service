@@ -122,7 +122,3 @@
     4. 그러면 개발자 도구에 날짜 태그가 잡힐 것 입니다. 그 태그에 마우스 오른쪽을 클릭하여 copy > copy selector를 클릭합니다. 그러면 자동으로 날짜 태그의 위치가 복사되어집니다.
     5. 에디터로 돌아가 review_date의 select 인수에 붙여넣기 해줍니다. 그러면 처음에는 <img width="1354" alt="스크린샷 2024-08-17 18 15 45" src="https://github.com/user-attachments/assets/9c8106e9-4170-4fd2-805e-78b1f1cfcfcc"> 이미지와 같이 붙여넣어졌을텐데 여기서 :nth-child(n) 부분들은 다 지워줍니다. 그러면 이렇게 코드가 변경됩니다. <img width="1036" alt="스크린샷 2024-08-17 18 16 59" src="https://github.com/user-attachments/assets/360a57b2-5d58-4673-91db-f6b04a7f4486">
     6. 이제 저장하고 실행하면 이슈가 해결됩니다.
-
-
-
-
