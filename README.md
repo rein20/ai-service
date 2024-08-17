@@ -112,3 +112,13 @@
     - 고객 리뷰 및 가게 정보를 안전하게 관리합니다.
     - 오픈리스트 및 배민1 광고 상품 일부 매장들 정보만 활용합니다.
 - 사용 기술: OpenAI API (LLM + Embedding + Assistant), Claude API, BeautifulSoup4, Selenium, Gradio
+
+  ### FAQ 1. 크롤링 이슈 (ex. IndexError: list index out of range)
+  - 원인 : 야놀자 웹페이지의 태그의 클래스명 변경 또는 상속의 변화로 일어나는 것입니다.(주기적으로 변경되는지 아닌지는 알 수가 없어 비슷한 이슈 발생 시 여기를 먼저 확인해보는것을 추천합니다.)
+  - 해결 방법 :
+    1. 야놀자 웹페이지에 접속하여 개발자 도구를 킵니다.
+    2. 개발자 도구를 보면 맨 왼쪽 측에 있는 이미지와 같은 아이콘 <img width="30" alt="스크린샷 2024-08-17 18 03 22" src="https://github.com/user-attachments/assets/17d0bb9c-7532-46c5-9abb-40936ec56491"> 을 클릭합니다. 
+    3. 아이콘을 클릭한 상태에서 날짜가 표기된 부분을 클릭합니다.<img width="771" alt="스크린샷 2024-08-17 18 04 50" src="https://github.com/user-attachments/assets/a0d6d4f3-d8e5-4828-a6f6-1fc0757cf54a">
+    4. 그러면 개발자 도구에 날짜 태그가 잡힐 것 입니다. 그 태그에 마우스 오른쪽을 클릭하여 copy > copy selector를 클릭합니다. 그러면 자동으로 날짜 태그의 위치가 복사되어집니다.
+    5. 에디터로 돌아가 review_date의 select 인수에 붙여넣기 해줍니다. 그러면 처음에는 <img width="1354" alt="스크린샷 2024-08-17 18 15 45" src="https://github.com/user-attachments/assets/9c8106e9-4170-4fd2-805e-78b1f1cfcfcc"> 이미지와 같이 붙여넣어졌을텐데 여기서 :nth-child(n) 부분들은 다 지워줍니다. 그러면 이렇게 코드가 변경됩니다. <img width="1036" alt="스크린샷 2024-08-17 18 16 59" src="https://github.com/user-attachments/assets/360a57b2-5d58-4673-91db-f6b04a7f4486">
+    6. 이제 저장하고 실행하면 이슈가 해결됩니다.
