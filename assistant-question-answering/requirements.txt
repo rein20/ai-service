@@ -1,0 +1,9 @@
+anthropic==0.31.2
+openai==1.36.1
+google-api-python-client==2.137.0
+google-auth-httplib2==0.2.0
+google-auth-oauthlib==1.2.1
+slack-bolt==1.19.1
+slack==0.0.2
+slackclient==2.9.4
+numpy==2.0.1
