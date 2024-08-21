@@ -16,6 +16,14 @@
 - [Part 12. 사내 업무 에이전트](https://github.com/rein20/ai-service/tree/main/assistant-question-answering)
 - Part 14. 배달의민족 리뷰 기반 메뉴/맛집 추천 (제작 중)
 
+## 강의에서 다루는 기술들
+- OpenAI ChatGPT API, Anthropic Claude API, Google Gemini API
+- Beautifulsoup4, Selenium
+- NumPy, Pandas
+- Gradio, Slackbot, Google Calendar API
+- Huggingface Hub
+- MongoDB, FastAPI
+
 ## FAQ
 Q. 크롤링 이슈 (ex. IndexError: list index out of range)
 - 원인 : 야놀자 웹페이지의 태그의 클래스명 변경 또는 상속의 변화로 발생하는 이슈입니다.
