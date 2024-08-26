@@ -18,6 +18,7 @@
 
 ## 강의에서 다루는 기술들
 - OpenAI ChatGPT API, Anthropic Claude API, Google Gemini API
+- Prompt Engineering, LLM Evaluation
 - Beautifulsoup4, Selenium
 - NumPy, Pandas
 - Gradio, Slackbot, Google Calendar API
