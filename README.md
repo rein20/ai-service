@@ -14,16 +14,26 @@
 - [Part 5. 카카오 대화 요약](https://github.com/rein20/ai-service/tree/main/kakaotalk-summarization)
 - [Part 8. 실전 RAG](https://github.com/rein20/ai-service/tree/main/retrieval-augmented-generation)
 - [Part 12. 사내 업무 에이전트](https://github.com/rein20/ai-service/tree/main/assistant-question-answering)
-- Part 14. 배달의민족 리뷰 기반 메뉴/맛집 추천 (제작 중)
+- [Part 14. 배달의민족 리뷰 기반 메뉴/맛집 추천](https://github.com/rein20/ai-service/tree/main/baemin-recommendation)
 
 ## 강의에서 다루는 기술들
-- OpenAI ChatGPT API, Anthropic Claude API, Google Gemini API
-- Prompt Engineering, LLM Evaluation
-- Beautifulsoup4, Selenium
-- NumPy, Pandas
-- Gradio, Slackbot, Google Calendar API
-- Huggingface Hub
-- MongoDB, FastAPI
+- LLM API
+  - OpenAI ChatGPT API, Anthropic Claude API, Google Gemini API
+- LLM 
+  - LLM Evaluation
+  - Prompt Engineering
+  - Function Calling / Tool Use
+  - Retrieval Augmented Generation (RAG)
+  - VectorDB
+- Frameworks
+  - Beautifulsoup4, Selenium (Data Crawling)
+  - Gradio (Demo)
+  - Slackbot (Chatbot UI)
+  - Google Calendar API (Function Calling)
+  - Huggingface Hub (Data Download)
+  - MongoDB (VectorDB, Meta DB)
+  - FastAPI (LLM, Recommendation API)
+  - NumPy, Pandas (RAG)
 
 ## FAQ
 Q. 크롤링 이슈 (ex. IndexError: list index out of range)
