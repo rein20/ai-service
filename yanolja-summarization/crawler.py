@@ -26,8 +26,8 @@ def crawl_yanolja_reviews(name, url):
 
     for i in range(len(review_containers)):
         review_text = review_containers[i].find('p', class_='content-text').text
-        review_stars = review_containers[i].find_all('path', {'fill': '#FDBD00'})
-        star_cnt = len(review_stars)
+        review_stars = review_containers[i].select('path[fill="currentColor"]')
+        star_cnt = sum(1 for star in review_stars if not star.has_attr('fill-rule'))
         date = review_date[i].text
 
         review_dict = {
